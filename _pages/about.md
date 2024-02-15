@@ -20,7 +20,7 @@ I'm a dynamic software engineer with over 1 year of hands-on experience in devel
 
 Additionally, I bring a strong foundation in server-side scripting with [PHP](https://www.php.net/docs.php) and [Python](https://www.python.org/doc/), coupled with database management using [MySQL](https://dev.mysql.com/doc/) and [MongoDB](https://www.mongodb.com/docs/). My commitment to version control is evident through my adept use of [Git](https://git-scm.com/doc), facilitating collaborative and efficient project development. With an eye for design, I leverage tools like [Figma](https://help.figma.com/hc/en-us) for UI/UX prototyping, while project management tools like [Trello](https://trello.com/guide) keep my workflows organized. Experienced in cloud technologies, I have worked with [Azure](https://learn.microsoft.com/en-us/azure/), further enhancing my ability to deliver scalable solutions. Overall, I am dedicated to creating innovative and user-centric applications that address real-world challenges.
 
-# 📝 Projects
+# Projects
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ThirdVision</div><img src='images/oob.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -48,5 +48,5 @@ The Project Aparichit is a website aimed at promoting transparency, citizen enga
 </div>
 </div>
 
-# 📖 Educations
+# Educations
 - *2020.09 - 2024.06 (now)*, Beihang University, Beijing. 

@@ -22,7 +22,7 @@ Additionally, I bring a strong foundation in server-side scripting with [PHP](ht
 
 # 📝 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arxiv</div><img src='images/IR-QLoRA.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arxiv</div><img src='images/oob.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Project Third Vision](https://github.com/initialrise/AsianHack2022)

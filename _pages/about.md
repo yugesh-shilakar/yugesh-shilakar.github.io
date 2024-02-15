@@ -22,7 +22,7 @@ Additionally, I bring a strong foundation in server-side scripting with [PHP](ht
 
 # 📝 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arxiv</div><img src='images/oob.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ThirdVision</div><img src='images/oob.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Project Third Vision](https://github.com/initialrise/AsianHack2022)
@@ -36,15 +36,15 @@ The project was developed by a team called "Brogrammers" for the Asian Hack 2022
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/InI.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Aparichit</div><img src='images/hm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[DIsolation and Induction: Training Robust Deep Neural Networks against Model Stealing Attacks](https://dl.acm.org/doi/abs/10.1145/3581783.3612092)
+[Project Aparichit](https://github.com/yugesh-shilakar/aparichit)
 
-Jun Guo, **Xingyu Zheng**, Aishan Liu, Siyuan Liang, Yisong Xiao, Yichao Wu, Xianglong Liu
+The Project Aparichit is a website aimed at promoting transparency, citizen engagement, and efficient governance in the Kathmandu Metropolitan Area. It serves as a centralized platform that empowers the local population to actively participate in the governance process, report corruption, access emergency services, share suggestions, and seek assistance from the relevant authorities anonymously. This README file provides an overview of the project's features and functionality to help stakeholders understand its purpose and usage.
 
 [**Project**](https://github.com/DIG-Beihang/InI-Model-Stealing-Defense) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
-- This paper proposes Isolation and Induction (**InI**), a novel and effective training framework for model stealing defenses.
+- The Kathmandu Metro e-Governance project was developed by a team of Rabindra Man Bajracharya, Sajan Paudel and Yugesh Raj Shilakar committed to enhancing citizen participation and promoting good governance.
 </div>
 </div>
 

@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Xingyu Zheng"
-description              : "Xingyu-Zheng / HomePage"
-repository               : "Xingyu-Zheng/Xingyu-Zheng.github.io"
+title                    : "Yugesh R. Shilakar"
+description              : "Yugesh R. / HomePage"
+repository               : "yugesh-shilakar/Yugesh-shilakar.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -21,8 +21,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Xingyu Zheng"
-  avatar           : "images/android-chrome-512x512.png"
+  name             : "Yugesh R. Shilakar"
+  avatar           : "images/pp2.png"
   bio              : "Beihang University"
   location         : "Beijing, China"
   employer         :

@@ -6,10 +6,14 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yugesh R. Shilakar"
-description              : "Yugesh S. / HomePage"
-repository               : "yugesh-shilakar/Yugesh-shilakar.github.io"
-google_scholar_stats_use_cdn : true
+locale                   : "en-US"
+title                    : "Yugesh S."
+title_separator          : "-"
+name                     : &name "Yugesh R. Shilakar"
+description              : &description "personal description"
+url                      : https://yugesh-shilakar.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+repository               : "yugesh-shilakar/yugesh-shilakar.github.io"
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -24,7 +28,7 @@ author:
   name             : "Yugesh R. Shilakar"
   avatar           : "images/pp2.png"
   bio              : "Software Engineer"
-  location         : "KAthmandu, Nepal"
+  location         : "Kathmandu, Nepal"
   employer         :
   pubmed           : 
   googlescholar    : 

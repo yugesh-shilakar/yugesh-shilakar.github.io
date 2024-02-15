@@ -16,7 +16,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a senior student at Beihang University, supervised by Prof. [Xianglong Liu](https://xlliu-beihang.github.io/). After participating in adversarial learning, I'm currently devoted to the quantization of pretrained large models. I hope to gain a deeper understanding of models, and in turn make them more efficient and robust.
+I'm a dynamic software engineer with over 1 year of hands-on experience in developing cutting-edge web applications. Proficient in [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), I specialize in crafting visually appealing and responsive user interfaces. My expertise extends to back-end development, where I've honed my skills in [C#](https://learn.microsoft.com/en-us/dotnet/csharp/), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript), and the [.NET_Framework](https://learn.microsoft.com/en-us/dotnet/)to build robust and efficient server-side functionalities. I am well-versed in client-side development, particularly with [ReactJS](https://legacy.reactjs.org/docs/getting-started.html), ensuring seamless user experiences.
+
+Additionally, I bring a strong foundation in server-side scripting with [PHP](https://www.php.net/docs.php) and [Python](https://www.python.org/doc/), coupled with database management using [MySQL](https://dev.mysql.com/doc/) and [MongoDB](https://www.mongodb.com/docs/). My commitment to version control is evident through my adept use of [Git](https://git-scm.com/doc), facilitating collaborative and efficient project development. With an eye for design, I leverage tools like [Figma](https://help.figma.com/hc/en-us) for UI/UX prototyping, while project management tools like [Trello](https://trello.com/guide) keep my workflows organized. Experienced in cloud technologies, I have worked with [Azure](https://learn.microsoft.com/en-us/azure/), further enhancing my ability to deliver scalable solutions. Overall, I am dedicated to creating innovative and user-centric applications that address real-world challenges.
 
 # 📝 Publications 
 

@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yugesh R. Shilakar"
-description              : "Yugesh R. / HomePage"
+description              : "Yugesh S. / HomePage"
 repository               : "yugesh-shilakar/Yugesh-shilakar.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,35 +23,35 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yugesh R. Shilakar"
   avatar           : "images/pp2.png"
-  bio              : "Beihang University"
-  location         : "Beijing, China"
+  bio              : "Software Engineer"
+  location         : "KAthmandu, Nepal"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=ISXNTf8AAAAJ"
-  email            : "xingyuzheng@buaa.edu.cn"
+  googlescholar    : 
+  email            : "officialyugeshshilakar@gmail.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "yugesh.shilakar"
   foursquare       :
-  github           : "Xingyu-Zheng" # e.g., "github username"
+  github           : "yugesh-shilakar" # e.g., "github username"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "yugesh_shilakar"
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : # e.g., "linkedin username"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : "https://orcid.org/0009-0009-6283-7635" # e.g., "https://orcid.org/xxxx"
+  orcid            :  # e.g., "https://orcid.org/xxxx"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "YugeshShilakar"
   vine             :
   weibo            :
   xing             :

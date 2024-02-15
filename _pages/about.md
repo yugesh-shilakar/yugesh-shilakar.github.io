@@ -22,7 +22,7 @@ Additionally, I bring a strong foundation in server-side scripting with [PHP](ht
 
 # 📝 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arxiv</div><img src='images/IR-QLoRA.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ThirdVision</div><img src='images/IR-QLoRA.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Project Third Vision](https://github.com/initialrise/AsianHack2022)
@@ -31,10 +31,6 @@ This project is an object detection system implemented using Flask and OpenCV. I
 
 The project was developed by a team called "Brogrammers" for the Asian Hack 2022 hackathon, where it secured the third position. The team members worked collaboratively to create a robust and efficient object detection solution within the given time frame.
 
-[**Project**](https://github.com/htqin/ir-qlora) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:d1gkVwhDpl0C'></span></strong>
-- This paper proposes a novel **IR-QLoRA** for pushing quantized LLMs with LoRA to be highly accurate through information retention.
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/InI.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">

@@ -68,14 +68,7 @@ PayoWork is a freelancing platform specifically designed for individuals and bus
 
 [Project YAnimee](https://github.com/yugesh-shilakar/YAnimee)
 
-This project is an Anime Streaming Platform named YAnimee developed using ASP.NET Core MVC architecture. The platform allows users to browse and stream their favorite anime shows and movies. It provides a user-friendly interface and various features to enhance the anime streaming experience.Technologies used are :
-- ASP.NET Core MVC
-- C#
-- Entity Framework Core
-- HTML/CSS
-- JavaScript
-- Bootstrap
-- Microsoft SQL Server
+This project is an Anime Streaming Platform named YAnimee developed using ASP.NET Core MVC architecture. The platform allows users to browse and stream their favorite anime shows and movies. It provides a user-friendly interface and various features to enhance the anime streaming experience.
 
 [**Project**](https://github.com/yugesh-shilakar/YAnimee) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
 

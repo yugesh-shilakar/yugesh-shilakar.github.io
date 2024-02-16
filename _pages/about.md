@@ -44,12 +44,28 @@ The project was developed by a team called "Brogrammers" for the Asian Hack 2022
 
 The Project Aparichit is a website aimed at promoting transparency, citizen engagement, and efficient governance in the Kathmandu Metropolitan Area. It serves as a centralized platform that empowers the local population to actively participate in the governance process, report corruption, access emergency services, share suggestions, and seek assistance from the relevant authorities anonymously. This README file provides an overview of the project's features and functionality to help stakeholders understand its purpose and usage.
 
-[**Project**](https://github.com/DIG-Beihang/InI-Model-Stealing-Defense) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
+[**Project**](https://github.com/yugesh-shilakar/aparichit) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
 
 - The Kathmandu Metro e-Governance project was developed by a team of Rabindra Man Bajracharya, Sajan Paudel and Yugesh Raj Shilakar committed to enhancing citizen participation and promoting good governance.
 </div>
 </div>
 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PayoWork</div><img src='images/hm.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Project PayoWork](https://github.com/PayoWork/PayoWork)
+
+PayoWork is a freelancing platform specifically designed for individuals and businesses in Nepal. It provides a comprehensive solution for both remote and offline freelance work opportunities, connecting skilled professionals with clients seeking their expertise.
+
+[**Project**](https://github.com/PayoWork/PayoWork) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
+
+- The project was developed by a team of Yugesh Raj Shilakar, Bishesh Sthapit, Pranish Raj Tuladhar and Utsal K. Tamrakar.
+</div>
+</div>
+
 # Educations
 
-- _2020.09 - 2024.06 (now)_, Beihang University, Beijing.
+- _2019 - 2024_ (Bsc.CSIT), Asian School of Management and Technology (TU), Gongabu.
+- _2017 - 2019_ (+2, Science), National Integradted College, Dillibazar.
+- _2006 - 2017_ (Schooling), Bijeswori H. S. School, Bijeswori.

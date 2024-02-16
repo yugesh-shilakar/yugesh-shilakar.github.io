@@ -2,7 +2,7 @@
 permalink: /
 title: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -32,6 +32,7 @@ This project is an object detection system implemented using Flask and OpenCV. I
 The project was developed by a team called "Brogrammers" for the Asian Hack 2022 hackathon, where it secured the third position. The team members worked collaboratively to create a robust and efficient object detection solution within the given time frame.
 
 [**Project**](https://github.com/initialrise/AsianHack2022) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:d1gkVwhDpl0C'></span></strong>
+
 - The project was developed by a team called "Brogrammers" for the Asian Hack 2022 hackathon, where it secured the third position. The team members worked collaboratively to create a robust and efficient object detection solution within the given time frame.
 </div>
 </div>
@@ -44,9 +45,11 @@ The project was developed by a team called "Brogrammers" for the Asian Hack 2022
 The Project Aparichit is a website aimed at promoting transparency, citizen engagement, and efficient governance in the Kathmandu Metropolitan Area. It serves as a centralized platform that empowers the local population to actively participate in the governance process, report corruption, access emergency services, share suggestions, and seek assistance from the relevant authorities anonymously. This README file provides an overview of the project's features and functionality to help stakeholders understand its purpose and usage.
 
 [**Project**](https://github.com/DIG-Beihang/InI-Model-Stealing-Defense) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
+
 - The Kathmandu Metro e-Governance project was developed by a team of Rabindra Man Bajracharya, Sajan Paudel and Yugesh Raj Shilakar committed to enhancing citizen participation and promoting good governance.
 </div>
 </div>
 
 # Educations
-- *2020.09 - 2024.06 (now)*, Beihang University, Beijing. 
+
+- _2020.09 - 2024.06 (now)_, Beihang University, Beijing.

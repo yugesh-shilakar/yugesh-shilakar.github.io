@@ -16,9 +16,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm a dynamic software engineer with over 1 year of hands-on experience in developing cutting-edge web applications. Proficient in HTML and CSS, I specialize in crafting visually appealing and responsive user interfaces. My expertise extends to back-end development, where I've honed my skills in C#, JavaScript, and the .NET Framework to build robust and efficient server-side functionalities. I am well-versed in client-side development, particularly with ReactJS, ensuring seamless user experiences.
+I am a software engineer who can make new and cool websites. I can use HTML and CSS, which are languages that make websites look nice and fit on different screens. I can also make websites do things on the server, using C#, JavaScript, and the .NET Framework. These are tools that help me make websites fast and reliable. I can make websites work well on the browser, using ReactJS. This is a tool that helps me make websites easy to use. 
 
-Additionally, I bring a strong foundation in server-side scripting with PHP and Python, coupled with database management using MySQL and MongoDB. My commitment to version control is evident through my adept use of Git, facilitating collaborative and efficient project development. With an eye for design, I leverage tools like Figma for UI/UX prototyping, while project management tools like Trello keep my workflows organized. Experienced in cloud technologies, I have worked with Azure, further enhancing my ability to deliver scalable solutions. Overall, I am dedicated to creating innovative and user-centric applications that address real-world challenges.
+I can also use other languages and tools for websites, like PHP and Python. They help me write code that runs on the server. I can use MySQL and MongoDB, which are tools that help me store and use data for the websites. I use Git, which is a tool that helps me work with other people on the same website. I use Figma, which is a tool that helps me plan how the websites will look like. I use Trello, which is a tool that helps me keep track of what I need to do. I use Azure, which is a tool that helps me put my websites on the internet. I like to make websites that are useful and fun for people.
 
 
 # Projects

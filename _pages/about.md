@@ -110,6 +110,38 @@ Have an experience as a part time computer teacher of school level from class 6-
 </div>
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Swift Innovation</div><img src='images/si.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+## Digital Marketing
+
+Worked as Intern remotely as Digital Marketing for scraping data as well as
+storing it into the Community Dataset as well as MongoDB.
+
+[**Swift Innovation**](https://swiftinnovation.io/) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
+
+- _2023 - 2023_
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">LTech Inc.</div><img src='images/ltech.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+## Graphics Designing
+
+Working as Junior Graphic Designer remotely for desigining UI/UX as well as
+company banners, ADs etc.
+
+[**LTech Inc.**](https://useltech.com/) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
+
+- _2023 - 2023_
+
+</div>
+</div>
+
+
 
 # Educations
 

@@ -20,3 +20,6 @@ main:
 
   - title: "Portfolio"
     url: https://yugesh.vercel.app
+
+  - title: "CV"
+    url: "/images/res.pdf/"

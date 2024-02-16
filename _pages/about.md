@@ -29,8 +29,6 @@ Additionally, I bring a strong foundation in server-side scripting with [PHP](ht
 
 This project is an object detection system implemented using Flask and OpenCV. It utilizes computer vision techniques to identify and localize objects within an image or video stream. The system is designed to be deployed as a web application, allowing users to upload images or provide a video feed for real-time object detection.
 
-The project was developed by a team called "Brogrammers" for the Asian Hack 2022 hackathon, where it secured the third position. The team members worked collaboratively to create a robust and efficient object detection solution within the given time frame.
-
 [**Project**](https://github.com/initialrise/AsianHack2022) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:d1gkVwhDpl0C'></span></strong>
 
 - The project was developed by a team called "Brogrammers" for the Asian Hack 2022 hackathon, where it secured the third position. The team members worked collaboratively to create a robust and efficient object detection solution within the given time frame.

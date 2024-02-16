@@ -45,7 +45,7 @@ The Project Aparichit is a website aimed at promoting transparency, citizen enga
 
 [**Project**](https://github.com/yugesh-shilakar/aparichit) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
 
-- The Kathmandu Metro e-Governance project was developed by a team of Rabindra Man Bajracharya, Sajan Paudel and Yugesh Raj Shilakar committed to enhancing citizen participation and promoting good governance.
+- The Kathmandu Metro e-Governance project was developed by a team of [Rabindra Man Bajracharya](https://github.com/initialrise), [Sajan Paudel]() and [Yugesh Raj Shilakar](https://github.com/yugesh-shilakar) committed to enhancing citizen participation and promoting good governance.
 </div>
 </div>
 
@@ -59,7 +59,7 @@ PayoWork is a freelancing platform specifically designed for individuals and bus
 
 [**Project**](https://github.com/PayoWork/PayoWork) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
 
-- The project was developed by a team of Yugesh Raj Shilakar, Bishesh Sthapit, Pranish Raj Tuladhar and Utsal K. Tamrakar.
+- The project was developed by a team of [Yugesh Raj Shilakar](https://github.com/yugesh-shilakar), [Bishesh Sthapit](https://github.com/bishesh55), [Pranish Raj Tuladhar](https://github.com/pranish9) and [Utsal K. Tamrakar](https://github.com/Utsal143).
 </div>
 </div>
 
@@ -73,7 +73,7 @@ This project is an Anime Streaming Platform named YAnimee developed using ASP.NE
 
 [**Project**](https://github.com/yugesh-shilakar/YAnimee) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
 
-- The project was developed by Yugesh Raj Shilakar, as an final project of 6th Semester Net Centric Computing Project.
+- The project was developed by [Yugesh Raj Shilakar](https://github.com/yugesh-shilakar), as an final project of 6th Semester Net Centric Computing Project.
 </div>
 </div>
 

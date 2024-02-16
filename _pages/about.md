@@ -51,7 +51,7 @@ The Project Aparichit is a website aimed at promoting transparency, citizen enga
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PayoWork</div><img src='images/hm.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PayoWork</div><img src='images/pw.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Project PayoWork](https://github.com/PayoWork/PayoWork)

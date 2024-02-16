@@ -95,6 +95,21 @@ including handwritten documentation and minutes.
 </div>
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Jagat Sundar Bownikuthi</div><img src='images/jsb.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+## Part Time Teacher
+
+Have an experience as a part time computer teacher of school level from class 6-9.
+
+[**Jagat Sundar Bownikuthi**](https://edusanjal.com/school/jagatsundar-bwonekuthi-secondary-school/) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
+
+- _2022 - 2023_
+
+</div>
+</div>
+
+
 
 # Educations
 

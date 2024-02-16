@@ -77,6 +77,24 @@ This project is an Anime Streaming Platform named YAnimee developed using ASP.NE
 </div>
 </div>
 
+# Experiences
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Udaaya Samaj</div><img src='images/us.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+## Database Administrator 
+
+Experience as an associated Database Administrator for hybrid dataset
+including handwritten documentation and minutes.
+
+<!-- [**Project**](https://github.com/yugesh-shilakar/YAnimee) <strong><span class='show_paper_citations' data='ISXNTf8AAAAJ:u-x6o8ySG0sC'></span></strong>
+
+- The project was developed by Yugesh Raj Shilakar, as an final project of 6th Semester Net Centric Computing Project. -->
+</div>
+</div>
+
+
+
 # Educations
 
 - _2019 - 2024_ (Bsc.CSIT), Asian School of Management and Technology (TU), Gongabu.

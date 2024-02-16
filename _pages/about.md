@@ -79,7 +79,7 @@ This project is an Anime Streaming Platform named YAnimee developed using ASP.NE
 
 # Experiences
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Udaaya Samaj</div><img src='images/us.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Udaaya Samaj</div><img src='images/us1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 ## Database Administrator 

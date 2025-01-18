@@ -1,0 +1,828 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Policy Register dApp</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="17fd52a9-2e96-804e-a37c-cadd79b9a290" class="page sans"><header><img class="page-cover-image" src="Decentralized.png" style="object-position:center 23.87%"/><h1 class="page-title">Policy Register dApp</h1><p class="page-description"></p></header><div class="page-body"><p id="17fd52a9-2e96-80ec-8b7d-eb87d4ee60a4" class="">First, we need a smart contract that stores the policies. Here’s a simple Solidity smart contract for this purpose:</p><pre id="17fd52a9-2e96-8057-afd6-caf0e4b6e509" class="code"><span><code>// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract PolicyRegistry {
+    struct Policy {
+        uint256 id;
+        string data;
+        address owner;
+    }
+
+    Policy[] public policies;
+
+    function registerPolicy(string memory data) public {
+        uint256 id = policies.length;
+        policies.push(Policy(id, data, msg.sender));
+    }
+
+    function getPolicy(uint256 id) public view returns (Policy memory) {
+        require(id &lt; policies.length, &quot;Policy does not exist&quot;);
+        return policies[id];
+    }
+
+    function getPoliciesCount() public view returns (uint256) {
+        return policies.length;
+    }
+}</code></span></pre><p id="17fd52a9-2e96-80b2-8469-eadeb9eca89a" class="">Install Nethereum package library from Package Manager Console:</p><pre id="17fd52a9-2e96-80a5-9794-d02a0bab83d6" class="code"><span><code>Install-Package Nethereum.Web3</code></span></pre><p id="17fd52a9-2e96-8039-bdb0-d62a570d2456" class="">Create <a href="http://ASP.NET">ASP.NET</a> MVC project and create a model named <code>Block.cs</code>. I am using .NET version 8.0</p><pre id="17fd52a9-2e96-80e5-a484-d22261bdd25b" class="code"><span><code>using System;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace BlockchainApp.Models
+{
+    public class Block
+    {
+        public int Index { get; set; }
+        public string PolicyData { get; set; }
+        public DateTime Timestamp { get; set; }
+        public string PreviousHash { get; set; }
+        public string Hash { get; set; }
+
+        public Block(int index, string policyData, string previousHash)
+        {
+            Index = index;
+            PolicyData = policyData;
+            Timestamp = DateTime.UtcNow;
+            PreviousHash = previousHash;
+            Hash = CalculateHash();
+        }
+
+        public string CalculateHash()
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                var rawData = $&quot;{Index}{PolicyData}{Timestamp}{PreviousHash}&quot;;
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+                return BitConverter.ToString(bytes).Replace(&quot;-&quot;, &quot;&quot;).ToLower();
+            }
+        }
+    }
+}</code></span></pre><p id="17fd52a9-2e96-800e-86e3-cf9f6989f20c" class="">Then create a class for<strong> </strong>the Blockchain i.e. <code>Blockchain</code><code><strong>.</strong></code><code>cs</code></p><pre id="17fd52a9-2e96-8015-a649-df7b6e3cfbb5" class="code"><span><code>using System.Collections.Generic;
+
+namespace BlockchainApp.Models
+{
+    public class Blockchain
+    {
+        public List&lt;Block&gt; Chain { get; private set; }
+
+        public Blockchain()
+        {
+            Chain = new List&lt;Block&gt;();
+            // Create the genesis block
+            AddBlock(&quot;Genesis Block&quot;);
+        }
+
+        public void AddBlock(string policyData)
+        {
+            int index = Chain.Count;
+            string previousHash = Chain.Count &gt; 0 ? Chain[index - 1].Hash : &quot;0&quot;;
+            Block newBlock = new Block(index, policyData, previousHash);
+            Chain.Add(newBlock);
+        }
+    }
+}</code></span></pre><p id="17fd52a9-2e96-8034-9b97-db96f67aa5cf" class="">Now we can create controller by:</p><p id="17fd52a9-2e96-8053-b78f-cad35b93ea25" class="">Right-click on the <code><strong>Controllers</strong></code> folder, select <strong>Add</strong> &gt; <strong>Controller</strong>.</p><p id="17fd52a9-2e96-8097-8057-c168684a4c4b" class="">Choose <strong>MVC Controller - Empty</strong> and name it <code><strong>PolicyController</strong></code></p><pre id="17fd52a9-2e96-8019-8a0c-d56d79195ad4" class="code"><span><code>using System.Web.Mvc;
+using BlockchainApp.Models;
+
+namespace BlockchainApp.Controllers
+{
+    public class PolicyController : Controller
+    {
+        private static Blockchain blockchain = new Blockchain();
+
+        // GET: Policy
+        public ActionResult Index()
+        {
+            return View(blockchain.Chain);
+        }
+
+        [HttpPost]
+        public ActionResult Register(string policyData)
+        {
+            if (!string.IsNullOrEmpty(policyData))
+            {
+                blockchain.AddBlock(policyData);
+            }
+            return RedirectToAction(&quot;Index&quot;);
+        }
+    }
+}</code></span></pre><p id="17fd52a9-2e96-80f7-a3ed-f9a25a763174" class="">Then we can proceed to create a view for the Index action:</p><p id="17fd52a9-2e96-80fb-8b27-f8ac625aeb2e" class="">Right-click on the <code><strong>Views</strong></code> folder, create a new folder named <code><strong>Policy</strong></code>, and then right-click on the <code><strong>Policy</strong></code> folder, select <strong>Add</strong> &gt; <strong>View</strong> and name it <code><strong>Index.cshtml</strong></code>.</p><pre id="17fd52a9-2e96-802f-b22b-fb91fa6517ef" class="code"><span><code>@model IEnumerable&lt;BlockchainApp.Models.Block&gt;
+
+@{
+    ViewBag.Title = &quot;Policy Registry&quot;;
+}
+
+&lt;h2&gt;Policy Registry&lt;/h2&gt;
+
+&lt;form method=&quot;post&quot; action=&quot;@Url.Action(&quot;Register&quot;, &quot;Policy&quot;)&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;policyData&quot; placeholder=&quot;Enter policy data&quot; required /&gt;
+    &lt;button type=&quot;submit&quot;&gt;Register Policy&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;h3&gt;Registered Policies&lt;/h3&gt;
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Index&lt;/th&gt;
+            &lt;th&gt;Policy Data&lt;/th&gt;
+            &lt;th&gt;Timestamp&lt;/th&gt;
+            &lt;th&gt;Previous Hash&lt;/th&gt;
+            &lt;th&gt;Hash&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        @foreach (var block in Model)
+        {
+            &lt;tr&gt;
+                &lt;td&gt;@block.Index&lt;/td&gt;
+                &lt;td&gt;@block.PolicyData&lt;/td&gt;
+                &lt;td&gt;@block.Timestamp&lt;/td&gt;
+                &lt;td&gt;@block.PreviousHash&lt;/td&gt;
+                &lt;td&gt;@block.Hash&lt;/td&gt;
+            &lt;/tr&gt;
+        }
+    &lt;/tbody</code></span></pre><p id="17fd52a9-2e96-80dc-97a6-c74bebf3f081" class="">Open the <code><strong>Program.cs</strong></code> file in your project and set up the routing as follows:</p><pre id="17fd52a9-2e96-8084-93e6-cd72b3746657" class="code"><span><code>app.MapControllerRoute(
+    name: &quot;default&quot;,
+    pattern: &quot;{controller=Blockchain}/{action=Index}/{id?}&quot;);
+</code></span></pre><p id="17fd52a9-2e96-8089-bc30-d3a1f788f5c4" class="">Output:</p><figure id="17fd52a9-2e96-801c-97bb-e064a0712d4b" class="image"><a href="image.png"><img style="width:707.9874877929688px" src="image.png"/></a></figure><p id="00ed6ba9-b206-4456-983b-f018f68eaf54" class="">Here are the key annotations for the blockchain policy registry interface shown in the image:</p><ul id="06c4d603-c043-4e83-827b-adc2391f0a92" class="bulleted-list"><li style="list-style-type:disc">The top section shows a text input field labelled &quot;Enter Policy Data&quot; with a &quot;Register&quot; button - this is where new policies can be entered into the blockchain</li></ul><ul id="abe635e9-2928-46a9-bd35-69315a8a9c3a" class="bulleted-list"><li style="list-style-type:disc">The main table displays the blockchain data with 5 columns:<ul id="47984ec0-8bb2-4b04-9613-b199cdbeb824" class="bulleted-list"><li style="list-style-type:circle">Index: Sequential number of each block</li></ul><ul id="19237aac-0040-4ae3-8efd-a820f4206945" class="bulleted-list"><li style="list-style-type:circle">Policy Data: The actual policy information stored</li></ul><ul id="cf4656d1-86da-457c-867d-55dda72f7eb0" class="bulleted-list"><li style="list-style-type:circle">Timestamp: When the block was created</li></ul><ul id="9223aca3-16a2-4324-a27b-0ad5b22719d3" class="bulleted-list"><li style="list-style-type:circle">Previous Hash: Hash of the previous block (0 for genesis block)</li></ul><ul id="66aaf918-7c23-460a-9200-4f5518abdb8f" class="bulleted-list"><li style="list-style-type:circle">Hash: Unique hash for the current block</li></ul></li></ul><ul id="65189551-d12d-4c20-a00e-be18198b14d8" class="bulleted-list"><li style="list-style-type:disc">The table shows 4 blocks (0-3), starting with the Genesis Block and including 3 additional policy entries</li></ul><ul id="8f6959a3-fc51-4ee9-a8e9-2a0a7f56abdc" class="bulleted-list"><li style="list-style-type:disc">Each block&#x27;s hash is calculated using the block&#x27;s data and links to the previous block&#x27;s hash, forming the blockchain structure</li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
